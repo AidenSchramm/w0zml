@@ -3,15 +3,33 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>me</title>
-    <style>
-			body {
-  			background-image: url("background.jpg");
-  			background-repeat: repeat;
-			}
-		</style>
   </head>
   <body>
-    <div style="text-align: center;"><img src="me.jpg" alt="" title="me" style="width: 500px; height: 665px;"></div>
-    
+    <img class="button" src="button.jpg" title="button">
+    <img class="me" src="me.jpg" title="me">
   </body>
 </html>
+
+<style>
+	body {
+  	background-image: url("background.jpg");
+  	background-repeat: repeat;
+	}
+  
+  .me {
+  	border: 1px solid #f00;
+  	width: 30%;
+ 		margin: auto;
+  	display: block;
+  	z-index: 2;
+	}
+  
+  .button {
+  	border: 1px solid #0f0;
+  	position: relative;
+    width: 10%;
+  	z-index: 1;
+  	top: -12px;
+  	left: -12px;
+	}
+</style>
